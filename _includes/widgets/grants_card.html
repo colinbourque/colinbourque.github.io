@@ -1,0 +1,21 @@
+{% assign grants_by_year = site.grants | sort: "alphabetical" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.telescope" -%}
+
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray">Guest Observations and Funding</h6>
+    <div class="px-3 pb-1 small">
+        {% for telescope in grants_by_year %}
+        <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
+            {% assign not_first = true %}
+            <div class="mr-3 text-muted my-1">{{ telescope.name }}</div>
+            <div class="media-body">
+                {% for item in telescope.items %}
+                <div class="my-1 d-flex">
+                    <div>{{ item.title }}, {{ item.role }}. {% if item.blurb %} <i> {{ item.blurb }} </i> {% endif %} </div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.award }}</i></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -31,3 +31,7 @@ gem "wdm", "~> 0.2" if Gem.win_platform?
 
 gem "webrick", "~> 1.7"
 gem "kramdown-parser-gfm"
+
+## Dependencies which were default when the package was written but now need to be called explicitly
+gem "base64"
+gem "bigdecimal"
