@@ -4,7 +4,7 @@ width: 12
 date: 2026-11-01 00:01:00 +0800
 ---
 <div>
-  <img data-src="https://api.star-history.com/svg?repos=luost26/academic-homepage&type=Date" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+  <img data-src=" '/assets/images/research/CygX1.jpeg' | relative_url" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/research/CygX1.jpeg' | relative_url }}">
   <div class="card-body">
     <h4 class="card-title">High Mass X-ray Binary Variability and Stellar Winds</h4>
     <hr />

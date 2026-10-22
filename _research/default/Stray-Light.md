@@ -12,7 +12,7 @@ date: 2026-12-01 00:01:00 +0800
       The Nuclear Spectroscopic Telescope Array (NuSTAR) allows for extremely valuable, focused hard X-ray observations. Due to the way the telescope is designed, however, additional light can bypass the focusing mirrors and cast a "stray light" pattern directly onto the detectors. While this is sometimes seen as contamination on another observation, with some extra care the extra data can be turned into high-level science products for a second target, leading to "free" observations and a stronger baseline for tracking time evolution.
     </p>
     <p>
-      Processing this stray light data requires generating unique instrument response files for every observation as well as a particularly careful treatment of the spectral background. 
+      Processing this stray light data requires generating unique instrument response files for every observation as well as a particularly careful treatment of the spectral background.
     </p>
   </div>
 </div>
